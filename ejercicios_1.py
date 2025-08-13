@@ -157,15 +157,92 @@ else:
 # Sistema de descuentos
 # Pide el precio y la categoría de cliente (normal, socio, VIP) y aplica distintos porcentajes de descuento.
 
+""" precio  = float(input("Introduce el precio: "))
+categoria = input("Introduce la categoria (normal, socio, VIP): ").lower()
+
+if categoria == "normal":
+    descuento = precio - (precio * 0.05) # 5% de descuento
+elif categoria == "socio":
+    descuento = precio - (precio * 0.10) # 10% de descuento
+elif categoria == "vip":
+    descuento = precio - (precio * 0.20) # 20% de descuento
+else:
+    print("Categoria invalida.")
+    descuento = precio - 0
+
+print(f"El precio final con descuento es: S/ {descuento:.2f}") """
+
 # Clasificador de triángulos
 # Pide tres lados y determina si el triángulo es equilátero, isósceles o escaleno.
+
+""" lado_1 = float(input("Introduce el primer lado: "))
+lado_2 = float(input("Introduce el segundo lado: "))
+lado_3 = float(input("Introduce el tercer lado: "))
+
+if lado_1 == lado_2 and lado_2 == lado_3:
+    print(f"la sumas es: {lado_1 + lado_2 + lado_3:.2f}")
+    print("El triangulo es quilatero")
+elif lado_1 == lado_2 or lado_2 == lado_3 or lado_1 == lado_3:
+    print(f"la sumas es: {lado_1 + lado_2 + lado_3:.2f}")
+    print("El triangulo es isosceles")
+else:
+    print(f"la sumas es: {lado_1 + lado_2 + lado_3:.2f}")
+    print("El triangulo es escaleno") """
+
 
 # Simulador de cajero automático
 # Pide el tipo de operación (retirar, depositar, consultar saldo) y actúa según el caso.
 
+""" tipo_de_operacion = input("Que tipo de operación deseas realizar (retirar, depositar, consultar saldo): ").lower()
+SALDO = 1000.00  # Saldo inicial del cajero
+
+if tipo_de_operacion == "retirar":
+    monto = float(input("Introduce el monto a retirar:"))
+    saldo_final = SALDO - monto
+    print(f"Su saldo es: {saldo_final:.2f}")
+elif tipo_de_operacion == "depositar":
+    monto = float(input("Introduce el monto a depositar:"))
+    saldo_final = SALDO + monto
+    print(f"Su saldo es: {saldo_final:.2f}")
+elif tipo_de_operacion == "consultar saldo":
+    print(f"Su saldo es: {SALDO:.2f}")
+else:
+    print("Operación inválida.") """
+
 # Calculadora de IMC con interpretación
 # Pide peso y altura, calcula el IMC y muestra si es bajo peso, normal, sobrepeso u obesidad.
 
+""" peso = float(input("Introduce tu peso en kg: "))
+altura = float(input("Introduce tu altura en metros: "))
+
+imc = peso / (altura ** 2)
+
+if imc < 18.5:
+    print(f"Tu IMC es {imc:.2f}. Bajo peso.")
+elif 18.5 <= imc < 24.9:
+    print(f"Tu IMC es {imc:.2f}. Peso normal.")
+elif 25 <= imc < 29.9:
+    print(f"Tu IMC es {imc:.2f}. Sobrepeso.")
+elif imc >= 30:
+    print(f"Tu IMC es {imc:.2f}. Obesidad.")
+else:
+    print("Error en el cálculo del IMC.") """
+
 # Sistema de calificación con observaciones
 # Pide una nota (0–100) y muestra tanto la letra (A, B, C…) como un comentario (“Excelente”, “Bueno”, “Regular”, “Deficiente”).
+
+""" nota = float(input("Introduce tu nota (0-100): "))
+
+if nota < 0 and nota > 100:
+    print("Nota inválida. Debe estar entre 0 y 100.")
+elif nota >= 90:
+    print("Tiene A, excelente calificacion")
+elif nota >=80:
+    print("Tiene B, buena calificacion")
+elif nota >=70:
+    print("Tiene C, calificacion regular")
+elif nota >=60:
+    print("Tiene D, nota minima deficiente")
+else:
+    print("Tiene F, reprobado")  """
 
